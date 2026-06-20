@@ -22,6 +22,9 @@ app.use(cors({
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
+app.get("/", (req, res) => {
+  res.send("Vaka Crackers Backend is Running 🚀");
+});
 
 // Body parser
 app.use(express.json());
